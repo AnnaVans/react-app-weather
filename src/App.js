@@ -6,7 +6,11 @@ function App() {
       <h1>Weather app</h1>
       <p>
         Coded by Anna Vansacova, open-sourced on{" "}
-        <a href="https://github.com/AnnaVans/react-app-weather" target="_blank">
+        <a
+          href="https://github.com/AnnaVans/react-app-weather"
+          target="_blank"
+          rel="noreferrer"
+        >
           Github
         </a>
       </p>
