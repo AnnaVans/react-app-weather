@@ -6,8 +6,8 @@ function App() {
     <div className="App">
       <Weather />
 
-      <p>
-        Coded by Anna Vansacova, open-sourced on{" "}
+      <footer>
+        Front-end by Anna Vansacova, open-sourced on{" "}
         <a
           href="https://github.com/AnnaVans/react-app-weather"
           target="_blank"
@@ -15,7 +15,7 @@ function App() {
         >
           Github
         </a>
-      </p>
+      </footer>
     </div>
   );
 }
