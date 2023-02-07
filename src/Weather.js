@@ -15,7 +15,7 @@ export default function Weather() {
       wind: response.data.wind.speed,
       city: response.data.name,
       feelsLike: response.data.main.feels_like,
-      icon: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
+      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`,
     });
 
     setReady(true);
@@ -75,7 +75,7 @@ export default function Weather() {
     );
   } else {
     const apiKey = "5354b60afda2b7800186c06153932396";
-    let city = "New York";
+    let city = "Boston";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
 
