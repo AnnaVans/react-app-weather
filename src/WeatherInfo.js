@@ -1,11 +1,14 @@
 import React from "react";
+import FormattedDate from "./FormattedDate";
 
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
       <h1>{props.data.city}</h1>
       <ul>
-        <li>{props.data.date}</li>
+        <li>
+          <FormattedDate date={props.data.date} />
+        </li>
         <li className="text-capitalize">{props.data.description}</li>
       </ul>
       <div className="row mt-3">
